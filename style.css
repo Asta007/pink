@@ -1,0 +1,143 @@
+:root{
+    --primary-pink : #BC5BB2;
+    --secondary-pink : #FFEBFD;
+}
+
+@font-face{
+    font-family: lilita;
+    src: url(LilitaOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: open;
+    src: url(OpenSans-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+#container{
+    background-color: var(--secondary-pink);
+    font-family: open;
+    padding-top: 20px;
+}
+
+nav{
+    padding: 50px;
+    padding-bottom: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 0px 10px;
+    position: relative;
+    color: var(--primary-pink);
+}
+
+
+nav a:hover::after {
+    width: 90%;
+}
+
+nav a::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 10px;
+    width: 0%;
+    background-color: var(--primary-pink);
+    height: 2px;
+    transition: all 300ms;
+}
+
+.pink-head{
+    width: 100%;
+}
+
+.pink-content{
+    margin-top: -20px;
+    background-color: var(--primary-pink);
+    padding: 100px 0px 50px 100px;
+    color : var(--secondary-pink);
+}
+
+.pink-content h1{
+    font-size: 3em;
+    margin: 0;
+}
+
+.pink-content p{
+    margin: 0;
+    width: 80%;
+    font-size: 1.5em;
+}
+
+footer{
+    margin-top: -20px;
+    background-color: var(--primary-pink);
+    width: 100%;
+    padding: 50px 100px 100px 100px;
+    color : var(--secondary-pink);
+}
+
+footer h2{
+    margin: 0;
+    position: relative;
+    padding-left: 120px;
+}
+
+footer h2::before{
+    position: absolute;
+    left: 0;
+    content:"";
+    height: 2px;
+    width: 110px;
+    background-color: #fff;
+    margin-top: 15px;
+}
+
+footer p{
+    margin: 0;
+
+}
+
+.text{
+
+}
+
+.text img{
+    /* float: left; */
+    width: 35%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+
+.thetext{
+    padding: 50px 0px 100px 100px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.thetext h2{
+    color : var(--primary-pink);
+    font-size: 1.8em;
+}
+
+.thetext p{
+    color  : #333;
+    font-size: 1.3em;
+}
